@@ -29,7 +29,20 @@
 ![](/assets/data_location.png) 
 
 
+## Shaders
+- A shader is a program written using the OpenGL ES Shading Language that takes the information about the vertices that make up a shape
+and generates the data needed to render the pixels onto the screen.
+- There are two shaders functions: **vertex shader** and the **fragment shader**. You write these in GLSL and they both together
+are the **shader program**
+### Vertex Shader
+- Its role is to transform the input vertex from its original coordinate to the clip space coordinate system used by WebGL, in which
+each axis has a range from -1.0 to 1.0
+### Fragment shader
+- It is called once for every pixel on each shape to be drawn. Its job is to determine the color of that pixel by figuring out the
+texel, the color and the lightining.
 
+
+- python3 -m http.server 9000
 - https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Tutorial/Adding_2D_content_to_a_WebGL_context
 - https://learnwebgl.brown37.net/
 - https://glmatrix.net/
