@@ -1,6 +1,6 @@
 function drawScene (gl, programInfo, buffers) {
   gl.clearColor(0.0, 0.0, 0.0, 1.0)
-  gl.clearDepth(5.0)
+  gl.clearDepth(10.0)
   gl.enable(gl.DEPTH_TEST)
   gl.depthFunc(gl.LEQUAL)
 
